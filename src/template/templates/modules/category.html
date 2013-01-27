@@ -1,0 +1,11 @@
+$def with (categories)
+
+<!--  Entry Category
+============================================================================ -->
+<div id="entry-category">
+	<h3 class="entry-category-header">Categories</h3>
+	<ul class="unstyled inline">
+		$for category in categories:
+			<li><a href="$config.searchURL?category=$category">$category</a></li>
+	</ul>
+</div>

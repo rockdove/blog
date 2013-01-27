@@ -1,0 +1,11 @@
+$def with (tags)
+
+<!--  Entry Tag
+============================================================================ -->
+<div id="entry-tag">
+	<h3 class="entry-tag-header">Tags</h3>
+	<ul class="unstyled inline">
+		$for tag in tags:
+		<li><a href="$config.searchURL?tag=$tag">$tag</a></li>
+	</ul>
+</div>

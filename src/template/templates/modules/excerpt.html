@@ -1,0 +1,19 @@
+$def with (excerpt)
+
+<!--  excerpt Excerpt
+============================================================================ -->
+
+<div class="excerpt excerpt-detail">
+	<div class="excerpt-header">
+		<h1 class="excerpt-title">$excerpt.title</h1>
+		<div class="excerpt-meta">
+			<span class="excerpt-by"> By <a href="$excerpt.author.url">$excerpt.author.name</a>
+				on $excerpt.date
+			</span>
+		</div>
+	</div>
+	<div class="excerpt-content">$excerpt.excerpt</div>
+	<div class="excerpt-more">
+		Read more<a href="$config.entryURL/$excerpt.url"> $excerpt.title</a>
+	</div>
+</div>

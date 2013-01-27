@@ -1,0 +1,21 @@
+$def with (entry)
+
+<!--  Entry
+============================================================================ -->
+
+<div id="entry">
+	<div class="entry entry-detail">
+		<div class="entry-header">
+			<h1 class="entry-title">$entry.title</h1>
+			<div class="entry-meta">
+				<span class="entry-by">
+					By <a href="$entry.author.url">$entry.author.name</a> on $entry.date
+				</span>
+				$:render.templates.misc.addthis()
+			</div>
+		</div>
+		<div class="entry-content">
+			$:entry.content
+		</div>
+	</div>
+</div>

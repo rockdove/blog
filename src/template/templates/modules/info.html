@@ -1,0 +1,19 @@
+$def with (entry)
+
+<!--  Entry Info
+============================================================================ -->
+
+<div id="entry-info">
+	<div class="entry entry-info">
+		<div class="entry-info-header">
+			<h3 class="entry-info-cap">Entry Info</h3>
+		</div>
+		<div class="entry-info-content">
+			<ul>
+				<li>Name:<a href="$config.entryURL/$entry.url"> $entry.title</a></li>
+				<li>Permlink:<a href="$config.entryURL/$entry.url">$config.siteURL$config.entryURL/$entry.url</a></li>
+				<li>Author:By <a href="$entry.author.url"> $entry.author.name</a> on $entry.date</li>
+			</ul>
+		</div>
+	</div>
+</div>

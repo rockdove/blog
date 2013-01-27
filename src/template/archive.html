@@ -1,0 +1,47 @@
+#def with (archives)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link href="$config.static/css/styles.css" rel="stylesheet"/>
+		<title>Welcome to $config.siteName</title>
+	</head>
+<body>
+
+$:render.templates.layout.header()
+
+<!--  Layout three columns
+============================================================================ -->
+<div id="content">
+	<div class="container">
+		<!--  3 columns layout
+============================================================================ -->
+		<div class="row">
+		
+			<!-- excerpt of last entries
+			================================================================ -->
+			<div class="span6">
+				$:render.templates.modules.archives()
+			</div>
+
+			<!-- primary sidebar of 3 columns
+			================================================================ -->
+			<div class="span3">
+				$:render.templates.layout.three.primary()
+			</div>
+
+			<!-- secondary sidebar of 3 columns
+			================================================================ -->
+			<div class="span3">
+				$:render.templates.layout.three.secondary()
+			</div>
+		</div>
+
+	</div>
+</div>
+$:render.templates.misc.analytics()
+$:render.templates.layout.footer()
+</body>
+</html>

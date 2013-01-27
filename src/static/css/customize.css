@@ -1,0 +1,9 @@
+/* margin content */
+#content{
+	margin-top:50px;
+	margin-bottom:30px;
+}
+
+#analytics{
+	display: none;
+}

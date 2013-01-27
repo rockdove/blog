@@ -1,0 +1,12 @@
+#def with (archives)
+
+<!--  Tag Related Entries
+============================================================================ -->
+
+<div id="archives">
+<h1 class="archives archives-head">Archives</h1>
+<ul>
+#for archive in archives:
+		<li class="archives archive-date">#archive.date<a href="#archive.url">#archive.title</a></li>
+</ul>
+</div>

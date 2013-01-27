@@ -1,0 +1,28 @@
+
+$:render.templates.layout.header()
+
+<!--  Layout three columns
+============================================================================ -->
+<div id="content">
+	<div class="container">
+		<!--  3 columns layout
+============================================================================ -->
+
+		<div class="row">
+			<!-- excerpt of last entries
+			================================================================ -->
+			<div class="span6">$:render.templates.modules.excerpt()</div>
+
+			<!-- primary sidebar of 3 columns
+			================================================================ -->
+			<div class="span3">$:render.templates.layout.three.primary()</div>
+
+			<!-- secondary sidebar of 3 columns
+			================================================================ -->
+			<div class="span3">$:render.templates.layout.three.secondary()</div>
+		</div>
+
+	</div>
+</div>
+$:render.templates.misc.analytics()
+$:render.templates.layout.footer()
